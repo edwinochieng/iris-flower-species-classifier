@@ -12,5 +12,6 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 knn_model = KNeighborsClassifier(n_neighbors=3)
 knn_model.fit(X_train, y_train)
 
+y_pred = knn_model.predict(X_test)
 
 
