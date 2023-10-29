@@ -9,3 +9,6 @@ y = iris.target  # Target (class labels)
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
 
+knn_model = KNeighborsClassifier(n_neighbors=3)
+
+
